@@ -1,4 +1,8 @@
 program LinearEquationSolver
+
+ ! a program that shows the stability and reliability of the Gaussian
+ ! elimination to solve systems of linear equations
+ 
   implicit none
   
   ! Matrix and vector declaration
@@ -8,11 +12,7 @@ program LinearEquationSolver
   
   ! factor multiplier and 
   real(8) :: factor, sum_val
-    
-  ! a program that shows the stability and reliability of the Gaussian
-  ! elimination to solve systems of linear equations   
-
-  ! Initialization of the 
+  
   allocate(a(n,n), b(n), x(n))
   
   a(1, :) = (/2, 0, 1/)
